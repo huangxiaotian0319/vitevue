@@ -9,7 +9,7 @@ import request from './request.js'
 // POST 请求
 async function postData(data) {
   try {
-    const response = await request.post('/login', data)
+    const response = await request.post('/api/tray/api/login', data)
     console.log(response)
     ElMessage({
     message: response.message,

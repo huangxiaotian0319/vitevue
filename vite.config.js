@@ -11,10 +11,10 @@ export default defineConfig({
     open: true, // 自动打开浏览器
     // 代理配置
     proxy: {
-      '/api': {
+      '/api/tray': {
         target: 'http://localhost:3000', // 你的实际接口地址
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '')
+        rewrite: (path) => path.replace(/^\/api\/tray/, '')
       }
     }
   }
